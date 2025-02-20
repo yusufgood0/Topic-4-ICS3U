@@ -28,8 +28,6 @@ for topic 4, part 5, type '5'
                     int age = 0;
                     double salary = 0;
 
-
-
                     Console.WriteLine(@"Part 1:
 Hello. What is your name?");
                     string name = Console.ReadLine();
@@ -80,7 +78,6 @@ Please enter the following information so I can sell it for a profit!");
                     //part 3
                     int age;
 
-
                     Console.WriteLine(@"Part 3:");
                     Console.Write("Hello. What is your name? ");
                     Console.WriteLine();
@@ -128,7 +125,7 @@ And five years ago you were {age - 5}! Imagine that!");
 
                     double total = double_item_1 + double_item_2;
                     double discount = total * 0.2;
-                    double sub_total = (total - discount);
+                    double sub_total = total - discount;
                     double tax = total * 0.13;
                     double amount_owed = sub_total + tax;
 
@@ -146,29 +143,11 @@ Tax (13%): ${total}
 =====================
 Total Owed: $ {amount_owed}
 ");
-
-
-
-
-
                 }
-
-                //Calculate the total price of the two items.
-                //Calculate a discount of 20 %.
-                //Apply the discount to the price by subtracting it from the total price.
-                //Calculate taxes(13 %).
-                //Calculate the final price by adding tax.
-                //All values should be outputted as currency.
-                //Output a formatted receipt that displays all necessary information.Here is what it could look
-                //like(but doesn’t have to be identical):
-
-
                 Console.WriteLine("");
                 Console.Write("press enter to continue");
                 Console.ReadLine();
                 Console.Clear();
-
-
             }
         }
     }
